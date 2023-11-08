@@ -1,0 +1,33 @@
+import math
+
+def addition(a,b):
+  return a + b
+  
+def subtraction(a,b):
+  return a-b
+  
+while True:
+  
+ 
+  operator = input("Enter the operation: +,-,sin,'stop' to exit")
+  if operator == "stop":
+      break
+  elif operator == 'sin':
+     x = float(input("Enter a number"))
+     value = math.sin(x)
+     print(f"{operator} ({x}) = {value}")
+  else:
+    x = float(input("Enter the first number"))
+    y = float(input("Enter the second number"))
+
+    if operator == "+":
+      value = addition(x,y)
+      print(f"{x} {operator} {y} = {value}")
+    elif operator == "-":
+      value = subtraction(x,y)
+      print(f"{x} {operator} {y} = {value}")
+    else:
+      print("Please enter a valid operation")
+	  
+	  
+	  #remember to add other ones and make sure to solve for people who try to divide by 0
