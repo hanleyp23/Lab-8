@@ -9,8 +9,10 @@ height = [10,24,36,40,5]
 #Tick labels for bars
 tick_label = ["food", "tuition", "rent","starbucks","savings"]
 
+
+#i changed some of the colors
 plt.bar(left, height, tick_label = tick_label, width = 0.6, 
-color = ['red','green','purple', 'yellow', 'orange'])
+color = ['red','green','blue', 'red', 'orange'])
 
 plt.xlabel("stevens monthly purchases")
 plt.ylabel("Dollars (in thousands)")
